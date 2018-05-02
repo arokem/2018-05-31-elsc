@@ -1,0 +1,566 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Talk at ELSC, May 31st, 2018">
+		<meta name="author" content="Ariel Rokem">
+
+		<title> A data science agenda for computational human neuroscience </title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/arokem.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+	<div class="reveal">
+	<div class="slides">
+
+	<section>
+		<img src="img/eScience.png" height="100px" alt="eScience logo" align="middle">
+
+		<h2> A data science agenda </h2>
+		<h4><div align=middle> for computational human neuroscience </div></h4>
+
+		<br>
+		<p><a href="http://arokem.org">Ariel Rokem</a>,
+		<a href="http://escience.washington.edu">University of Washington eScience Institute</a> </p>
+		<p>  <small>Follow along at: <t><a href=""></t></a></small></p>
+		<img src="img/cc-by.png" height="30px" alt="License" align="middle">
+	</section>
+
+	<section data-background-image="./images/radio-astronomy-survey.png" data-background-size="cover">
+		<blockquote  style="background: rgba(255, 255, 255, 0);">
+			<p style="color:#FFFFFF";>The era of brain observatories</p>
+		</blockquote>
+	</section>
+
+	<section>
+	<h4 class="fragment"> Allen Institute for Brain Science </h4>
+
+	<h4 class="fragment"> UK Biobank </h4>
+
+	<h4 class="fragment"> The Human Connectome Project </h4>
+	<p class="fragment">
+		- More than 1,000 participants
+	<p class="fragment">
+		- High-quality measurements of MRI
+	<p class="fragment">
+		- Genetics, cognitive measures, etc...
+
+	</section>
+
+	<section>
+	<h2>A data science agenda</h2>
+	<p class="fragment">Learning from data 1: insights from automated fiber quantification</p>
+	<p class="fragment">Learning from data 2: scaling expertise</p>
+	<p class="fragment">Learning from data 3: inferences about </p>
+	<p class="fragment">Sociotechincal challenges 1: data sharing</p>
+	<p class="fragment">Sociotechincal challenges 2: data science training</p>
+	</section>
+
+
+	<section>
+
+
+	</section>
+
+	<section>
+		<h2>Machine learning</h2>
+		<p class="fragment">Learning from data</p>
+		<p class="fragment">Features of the data are extracted/engineered</p>
+		<p class="fragment">Training data is used to infer model parameters</p>
+		<p class="fragment">Test data is used to evaluate accuracy</p>
+	</section>
+
+	<section>
+		<h2>Insights from automated fiber quantification</h2>
+		<img src="img/adam.png">
+		<img src="img/noah.png">
+		<img src="img/jason.jpg">
+	</section>
+
+	<section>
+		Automated Fiber Quantification (AFQ)
+		<img src="img/afq1.png">
+
+		<div class="cite">
+			<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049790">Yeatman et al. (2012)</a>
+		</div>>
+	</section>
+
+
+	<section>
+		Automated Fiber Quantification (AFQ)
+		<img src="img/afq2.png">
+
+		<div class="cite">
+			<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049790">Yeatman et al. (2012)</a>
+		</div>>
+	</section>
+
+
+	<section>
+		Automated Fiber Quantification (AFQ)
+		<img src="img/afq3.png">
+
+		<div class="cite">
+			<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049790">Yeatman et al. (2012)</a>
+		</div>>
+	</section>
+
+	<section>
+		Automated Fiber Quantification (AFQ)
+		<img src="img/afq4.png">
+
+		<div class="cite">
+			<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049790">Yeatman et al. (2012)</a>
+		</div>>
+	</section>
+
+
+		<section>
+		<h2>Scaling expertise with citizen science</h2>
+		<img src="img/anisha.jpg">
+		<img src="img/jason.jpg">
+	</section>
+
+	<section>
+		<h2>Learning cross-modal translation</h2>
+		<img src="img/sa.jpeg">
+		<img src="img/aaron.jpeg">
+	</section>
+
+	<section>
+	<h2>Artificial neural networks</h2>
+		<p class="fragment">A family of machine learning algorithms</p>
+		<p class="fragment">Biologically inspired</p>
+		<div class="cite">
+				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+			</div>
+		</section>
+
+	<section>
+
+	<h2>Artificial neural networks</h2>
+		<img src="img/minsky_papert.png">
+		<div class="cite">Minsky and Papert (1969)</div>
+	</section>
+
+	<section>
+	<h2> Artificial neural networks</h2>
+		<p>A family of machine learning algorithms</p>
+		<p>Biologically inspired</p>
+		<p class="fragment">Implement a cascade of linear/non-linear operations</p>
+		<div class="cite">
+				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+			</div>
+		</section>
+
+	<section>
+		<img src="img/simple-network.png">
+		<div class="cite">
+				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+			</div>
+		</section>
+
+	<section>
+		<h2> Artificial neural networks</h2>
+		<p>A family of machine learning algorithms</p>
+		<p>Biologically inspired</p>
+		<p>Implement a cascade of linear/non-linear operations</p>
+		<p class="fragment">Learn by back-propagating the errors through the network</p>
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="img/simple-backprop.png">
+		<div class="cite">
+		<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+		<h2> Convolutional networks</h2>
+		<p class="fragment">A way to reduce the number of parameters</p>
+		<p class="fragment">Capitalizes on spatial correlations in images</p>
+		<p class="fragment">Inspired by the mammalian visual system</p>
+
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+
+	</section>
+
+	<section>
+			<img src="img/bosking.jpg" height=500>
+
+			<div class="cite">
+					<a href="http://www.jneurosci.org/content/17/6/2112.long">Bosking et al. 1997</a>
+			</div>
+
+	</section>
+
+	<section>
+		<img src="img/convolution_animation.gif">
+
+		<div class="cite">
+				<a href="https://arxiv.org/abs/1603.07285">Dumoulin and Visin (2016)</a>
+		</div>
+	</section>
+
+	<section>
+		<div style="position: absolute; left:10px; top:10px;">
+		<img src="img/wall.png" height=250px;>
+		</div>
+		<div class="fragment" style="position: absolute; left:370px; top 10px;">
+				<img src="img/horizontal_wall.png" height=220px;>
+		</div>
+		<div class="fragment" style="position: absolute; left:650px;">
+				<img src="img/vertical_wall.png" height=220px;>
+		</div>
+		</section>
+
+	<section>
+		<img src="img/neural-network.png">
+		<div class=cite>
+			<a href="https://research.google.com/pubs/pub38115.html">Le et al. (2012)</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="img/imagenet-fig4l.png">
+		<div class=cite>
+		<a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">Krizhevsky et al. 2012</a>
+		</div>
+	</section>
+
+	<section>
+		<div align=center><h4>Optical Coherence Tomography (OCT)</h4>
+			High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
+		<div class="fragment" align="middle">
+		<image src="img/OCT.png" width="400px">
+		</div>
+		<div class="fragment" align="middle">
+		<image src="img/OCT-irf.png" width="400px">
+		</div>
+	</section>
+
+	<section>
+		<h4>The UW OCT/EMR data-base</h4>
+		<div class="fragment" style="position: absolute; left: 10px; top: 55px;" >
+				<p class="fragment">
+				10 years (2006-2016)
+			<p class="fragment">
+				9,285 patients
+			<p class="fragment">
+				43,328 OCT volumes
+			<p class="fragment">
+				2.64 million OCT images
+			<p class="fragment">
+				2.5 TB of data
+		</div>
+		<div style="position: absolute; left: 400px; top: 55px;" >
+			<p class="fragment">Linked to EPIC electronic medical records
+			<p class="fragment"> For each OCT we know:
+				<small>
+				<p class="fragment"> Visual acuity
+				<p class="fragment"> OCT interpretation
+				<p class="fragment"> Diagnosis
+				<p class="fragment"> Treatment determinations
+				<p class="fragment"> In some cases - longitudinal measurements
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4>Deep learning is effective for the classification of OCT images of normal versus Age-related Macular Degeneration </h4>
+		<img src="img/amd-vgg16-results.png" height=400px>
+		<div class=cite>
+			<a href="">Lee et al. (2016)</a>
+		</div>
+	</section>
+
+
+	<section>
+			<h4><div align="center">Is there a ball in the picture?</div></h4>
+			<image src="img/dog-with-ball.png" height="400px">
+			<div class=cite>
+				><a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">How about now?</div></h4>
+		<image src="img/dog-with-ball-occluder-corner.png" height="400px">
+		<div class=cite>
+				><a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">And now?</div></h4>
+	<image src="img/dog-with-ball-occluder-center.png" height="400px">
+
+	<div class=cite>
+		<a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
+	</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Deep learning network identifies clinical features</div></h4>
+		<image src="./img/amd-vgg16-occlusion.png" height="500px">
+		<div class=cite>
+		<a href="">Lee et al. (2016)</a>
+		</div>
+	</section>
+
+	<section>
+			<h2>Fully convolutional networks</h2>
+			Take an image as input and produce an image as output
+		</section>
+
+	<section>
+		<img src="img/unet-architecture.png" height=500px>
+		<div class=cite>
+			<a href="https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/">Ronneberger et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-segmentation-1.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-segmentation-2.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-vs-humans.png" height="500px">
+			<div style="position:absolute; left:580px;top:70px">
+				<image src="./img/white-square.png" height="500px">
+			</div>
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-vs-humans.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+
+	<section>
+		<h4>U-net based image synthesis</h4>
+	<img src="img/UNET.png">
+	</section>
+
+	<section>
+		<h4>OCT => OCTA </h4>
+		<img src="img/oct2octa.png" height=500px>
+		<div class=cite>
+			<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
+		</div>
+	</section>
+	<section>
+		<h4>OCT => OCTA </h4>
+		<img src="img/oct2octa_cues.png">
+		<div class=cite>
+			<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
+		</div>
+	</section>
+
+	<section>
+		<h4>MRI => MRI </h4>
+		<video width="800" autoplay loop>
+			<source src="img/t2t1.mov">
+		</video>
+	</section>
+
+	<section>
+		<h4>MRI => MRI </h4>
+		<img src="./img/t2t1_rsquared.png">
+	</section>
+
+	<section>
+	<h4>MRI => MRI </h4>
+		<img src="./img/t2t1_synth_rsquared.png">
+	</section>
+
+	<section>
+		<h3>But does it do the right thing?</h3>
+		<h3 class="fragment">Consider other architectures</h3>
+	</section>
+
+	<section>
+		<img src="img/cGAN.png">
+	</section>
+
+	<section>
+		<h3>And other cost functions</h3>
+	</section>
+
+	<section>
+	<img src="img/UNET_perceptual_loss.png">
+	</section>
+
+	<section>
+
+	<img src="img/t2t1_model_comparison.png">
+
+	</section>
+
+	<section>
+	<img src="img/mra1.png">
+	<img src="img/mra2.png">
+	<img src="img/mra3.png">
+	</section>
+
+	<section>
+			<h3>What is this good for?</h3>
+			<h3 class="fragment">Application: cross-modal image registration</h3>
+			<h3 class="fragment">An example with diffusion  MRI</h3>
+	</section>
+
+	<section>
+		<img src="./img/dti_reg.png" height=400>
+	</section>
+
+	<section>
+		<img src='img/compare_registrations.png'>
+	</section>
+
+	<section>
+		<h3>Tractography without diffusion MRI?</h3>
+	</section>
+
+	<section>
+		<video width="800" autoplay loop>
+			<source src="./img/colorfa.mov">
+		</video>
+
+	</section>
+
+	<section>
+		<video width="800" autoplay loop>
+			<source src="./img/fa.mov">
+		</video>
+	</section>
+
+	<!--
+	<section>
+		<h4>Angular error</h4>
+		<img src="img/cfa_angular_error.png">
+	</section>
+
+	<section>
+		Angular error
+	<video width="800" autoplay loop>
+		<source src="./img/ang_error.mov">
+	</video>
+
+	</section>
+	-->
+
+	<section>
+		<h2>Summary and conclusions</h2>
+		<p class="fragment">Fully convolutional neural networks are used for cross-modal image synthesis</p>
+		<p class="fragment">There are already applications (e.g., cross-modal registration)</p>
+		<p class="fragment">But more questions that answers: </p>
+		<p class="fragment">What is it learning?</p>
+		<p class="fragment">Can it tell us anything new about the physics of contrast mechanisms?</p>
+
+	</section>
+
+	<section>
+		<h2>One more thing</h2>
+		Jack Van Horn talk, April 11th, 2:30 PM.
+		Physics Auditorium
+	</section>
+
+	<section>
+
+			<div style="position:absolute; left: 200px; top:-120px;">
+			<h2>Contact information</h2>
+			</div>
+			<div style="position:absolute; left: 220px; top:-50px;">
+			<img src="img/globe-xxl.png" width="100px;" >
+			<div style="position:absolute; left: 120px; top:40px;">http://arokem.org
+			</div>
+			</div>
+			<div style="position:absolute; left: 220px; top:70px;">
+			<img src="img/email-11-xxl.png" width="100px;" >
+			<div style="position:absolute; left: 120px; top:40px;">arokem@gmail.com
+			</div>
+			</div>
+			<div style="position:absolute; left: 220px; top:190px;">
+			<img src="img/twitter-xxl.png" width="100px;" >
+			<div style="position:absolute; left: 120px; top:40px;">@arokem
+			</div>
+			</div>
+			<div style="position:absolute; left: 220px; top:310px;">
+			<img src="img/github-6-xxl.png" width="100px;" >
+			<div style="position:absolute; left: 120px; top:40px;">github.com/arokem
+			</div>
+			</div>
+
+	</section>
+
+	</div>
+	</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				controls: false,
+				progress: true,
+				center: true,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
