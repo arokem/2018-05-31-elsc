@@ -296,6 +296,24 @@
 				</div>
 		</section>
 
+
+		<section>
+			<h4>Solving multi-class multi-label problems</h4>
+			<p class="fragment">Binary classification doesn't model clinical decision making </p>
+			<p class="fragment">Patients can have any of a several diseases</p>
+			<p class="fragment">Patients can have more than one disease</p>
+			<div class=cite>
+				<a href="">Mehta et al. (2016)</a>
+			</div>
+
+		</section>
+
+		<section>
+			<h4>Augmenting the neural network with additional patient information</h4>
+			<img src="img/multi_class_multi_label.png">
+		</section>
+
+
 		<section>
 			<h2>Fully convolutional networks</h2>
 			Take an image as input and produce an image as output
@@ -475,11 +493,12 @@
 	-->
 
 	<section>
-		<h2>For example</h2>
-		<p class="fragment">Amyotrophic Lateral Sclerosis (ALS)</p>
+		<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
 		<p class="fragment">Disease of upper and lower motor neurons</p>
 		<p class="fragment">=>Focus on corticospinal tract</p>
-
+		<img class="fragment" src="img/sarica_results.png">
+		<p class="fragment">Classify patients based on the tissue properties in this part of the brain</p>
+		<p class="fragment">=> 80% accuracy</p>
 		<div class="cite">
 			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
 		</div>
@@ -500,18 +519,41 @@
 
 	<section>
 		<h2>The Lasso</h2>
+		<img src="img/lasso_penalty.png" width="400px">
+		<p class="fragment">But the standard lasso ignores the known structure in the data</p>
+	<div class="cite">
+		<a href="http://statweb.stanford.edu/~tibs/lasso/lasso.pdf">Tibshirani (1996)</a>
+	</div>
+	</section>
 
-
+	<section>
+		<h2>The Group Lasso</h2>
+	<img src="img/group_lasso_penalty.png" width="600px">
+	<p class="fragment">But the group lasso does not enforce overall sparsity</p>
+	<div class="cite">
+		<a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin</a>
+	</div>
 	</section>
 	<section>
 		<h2>Sparse Group Lasso</h2>
-		<p class="fragment">
-
+		<img src="img/sparse_group_lasso_penalty.png" width="600px">
 		<div class="cite">
 			<a href="https://www.tandfonline.com/doi/abs/10.1080/10618600.2012.681250">Simon et al. (2013)</a>
 		</div>
 	</section>
 
+	<section>
+		<h2>Fitting meta-parameters</h2>
+		<p class="fragment">Nested cross-validation</p>
+
+		XXX
+
+	</section>
+
+	<section>
+		<img src="img/sgl_result.png">
+		<p class="fragment">=> Classification accuracy of ~84%, AUC of 0.9 </p>
+	</section>
 
 	<section>
 		<h2>Challenge: Methods that work in standard datasets may fail in Big Data</h2>
@@ -554,23 +596,96 @@
 	</section>
 
 	<section>
-		<h2>Braindr</h2>
-		<img src="img/braindr.gif" height="500">
+		<h4><a href="https://braindr.us">https://braindr.us</a></h4>
+
+		<img src="img/braindr.gif">
+
 		<div class="cite">
-			<a href="">Keshavan, Yeatman, Rokem (in prep)</a>
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
+		</div>
+
+	</section>
+
+	<section>
+		<h2>Braindr</h2>
+		<div style="position: absolute; left:200px; top 10px;">
+		<blockquote class="twitter-tweet" data-lang="en">
+			<p lang="en" dir="ltr">Are you at work but feel like playing Tinder? Why not play braindr (<a href="https://t.co/yXw191Q7Hy">https://t.co/yXw191Q7Hy</a>) instead, and help neuroscientists rate the quality of brain images? Swipe left to fail bad quality images! Built with <a href="https://twitter.com/vuejs?ref_src=twsrc%5Etfw">@vuejs</a> and <a href="https://twitter.com/Firebase?ref_src=twsrc%5Etfw">@Firebase</a> <a href="https://twitter.com/hashtag/citizenscience?src=hash&amp;ref_src=twsrc%5Etfw">#citizenscience</a> <a href="https://t.co/tpI9Y3UKOb">pic.twitter.com/tpI9Y3UKOb</a></p>&mdash; anisha (@akeshavan_)
+			<a href="https://twitter.com/akeshavan_/status/961385285182353408?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
 		</div>
 	</section>
 
 	<section>
-		<h2></h2>
+		<h2>Multiple ratings per image</h2>
+		<img src="img/braindr_ratings_per_img.png" height="500">
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
+		</div>
 
 	</section>
 
 	<section>
-		<h2>Citizen scientist scores</h2>
-		<img src="img/braindr.gif" height="500">
+		<h2>But often, no agreement</h2>
+		<img src="img/braindr_average_rating.png" height="500">
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Aggregating across raters</h2>
+		<img src="img/braindr_rater_importance.png" height="500">
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Aggregating across raters</h2>
+		<img src="img/braindr_xgboost_ratings.png" height="500">
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
+		</div>
+	</section>
 
 
+	<section>
+		<h2>Aggregating across raters</h2>
+		<img src="img/braindr_xgboost_results.png" height="500">
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
+		</div>
+	</section>
+
+
+	<section>
+		<h2>Scaling expertise using citizen scientist ratings</h2>
+		<img src="img/braindr_learning_curves.png" height="500">
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
+		</div>
+	</section>
+
+
+	<section>
+		<h2>Scaling expertise using citizen scientist ratings</h2>
+		<img src="img/braindr_final_rocs.png" height="500">
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & Rokem (in prep)</a>
+		</div>
+	</section>
+
+
+
+		<section>
+	<h2>Sociotechnical challenges</h2>
+	Incentives for data sharing
+	Collaboration in open source software
+	Training
 	</section>
 
 
